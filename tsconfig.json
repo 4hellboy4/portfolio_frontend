@@ -13,7 +13,11 @@
     "paths": {
       "@/public/*": ["public/*"]
     },
-    "types": ["node", "react", "react-dom"],
+    "types": [
+      "node",
+      "react",
+      "react-dom",
+    ],
     "allowJs": true,
     "noEmit": true,
     "incremental": true,

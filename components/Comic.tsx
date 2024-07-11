@@ -2,14 +2,13 @@
 import React, { useState } from 'react';
 import { useRouter } from 'next/router';
 import axios from 'axios';
-import { formatDistanceToNow } from 'date-fns';
 import { XKCDComic } from '../types';
 import '../fonts/css/comic.css';
 
 const Comic: React.FC = () => {
   const [email, setEmail] = useState('');
-  const [xkcdToken, setXkcdToken] = useState('');
-  const [comicInfo, setComicInfo] = useState<XKCDComic | null>(null);
+  const [, setXkcdToken] = useState('');
+  const [, setComicInfo] = useState<XKCDComic | null>(null);
   const router = useRouter();
 
   const handleFetch = async () => {
@@ -20,7 +19,6 @@ const Comic: React.FC = () => {
       const comicData = await apiInfoFetch(token);
       setComicInfo(comicData);
 
-      // Navigate to the new page with email and comicData as query parameters
       router.push({
         pathname: `/comic/${email}`,
         query: { comicData: JSON.stringify(comicData) },
