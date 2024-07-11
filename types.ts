@@ -11,3 +11,14 @@ export interface XKCDComic {
   title: string;
   day: number;
 }
+
+export interface ComicInfo {
+  title: string;
+  img: string;
+  alt: string;
+}
+
+export interface ComicPageProps {
+  initialComicInfo: ComicInfo;
+  initialXkcdToken: string;
+}

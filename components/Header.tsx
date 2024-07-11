@@ -1,7 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import photo from '../public/images/hellboy.png'
+import photo from '../public/images/hellboy.png';
 
 const Header: React.FC = () => {
   return (
@@ -10,12 +10,20 @@ const Header: React.FC = () => {
 
       <nav>
         <ul className="nav__links">
-          <li><Link href="/projects">Projects</Link></li>
-          <li><Link href="/about">About</Link></li>
-          <li><Link href="/comic">Comic</Link></li>
+          <li>
+            <Link href="/projects">Projects</Link>
+          </li>
+          <li>
+            <Link href="/about">About</Link>
+          </li>
+          <li>
+            <Link href="/comic">Comic</Link>
+          </li>
         </ul>
       </nav>
-      <Link href="/" className="cta">Home</Link>
+      <Link href="/" className="cta">
+        Home
+      </Link>
     </header>
   );
 };

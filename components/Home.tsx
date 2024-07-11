@@ -1,7 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import photo from '../public/images/photo.jpg';
-import styles from '../fonts/css/styles.module.css'
+import styles from '../fonts/css/styles.module.css';
 
 const Home: React.FC = () => {
   return (
@@ -11,10 +11,22 @@ const Home: React.FC = () => {
           <Image src={photo} alt="Profile Image" width={300} height={300} />
         </div>
         <div className={styles['social-links']}>
-          <a id="gh-link" href="https://github.com/4hellboy4" target="_blank" rel="noopener noreferrer" title="GitHub">
+          <a
+            id="gh-link"
+            href="https://github.com/4hellboy4"
+            target="_blank"
+            rel="noopener noreferrer"
+            title="GitHub"
+          >
             <i className="fab fa-github"></i>
           </a>
-          <a id="tg-link" href="https://t.me/pushkin404" target="_blank" rel="noopener noreferrer" title="Telegram">
+          <a
+            id="tg-link"
+            href="https://t.me/pushkin404"
+            target="_blank"
+            rel="noopener noreferrer"
+            title="Telegram"
+          >
             <i className="fab fa-telegram-plane"></i>
           </a>
           <a id="email" href="mailto:gsv132005@gmail.com" title="Email">
@@ -23,10 +35,11 @@ const Home: React.FC = () => {
         </div>
         <div className={styles.info}>
           <p>
-            Hi! I'm Hellboy, a passionate software developer who also has a love for dancing and sport gymnastics. I'm
-            well-built thanks to my active lifestyle. I enjoy programming and constantly creating new projects. I like
-            hobbyhorsing, yeah! I'm dreaming of starting a hobbyhorsing club and a business for super people like you
-            and me!
+            Hi! I&apos;m Hellboy, a passionate software developer who also has a
+            love for dancing and sport gymnastics. I&apos;m well-built thanks to
+            my active lifestyle. I enjoy programming and constantly creating new
+            projects. I like hobbyhorsing, yeah! I&apos;m dreaming of starting a
+            hobbyhorsing club and a business for super people like you and me!
           </p>
         </div>
         <div className={styles.skills}>
